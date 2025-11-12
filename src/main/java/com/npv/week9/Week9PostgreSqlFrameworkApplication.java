@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EntityScan(basePackages = {"com.npv.week9", "com.example"})           // include where your @Entity classes live
-@EnableJpaRepositories(basePackages = {"com.npv.week9", "com.example"}) // include where your repositories live
+@EntityScan(basePackages = {"com.npv.week9", "com.example"})           
+@EnableJpaRepositories(basePackages = {"com.npv.week9", "com.example"}) 
 public class Week9PostgreSqlFrameworkApplication {
     public static void main(String[] args) {
         SpringApplication.run(Week9PostgreSqlFrameworkApplication.class, args);
