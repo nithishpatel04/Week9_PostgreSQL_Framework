@@ -23,6 +23,18 @@ public class Guests {
         this.email = email;
         this.address = address;
     }
+    
+    @ManyToOne
+    @JoinColumn(name = "room_id", nullable = false)   
+    private Rooms room;
+    
+    public Rooms getRoom() {
+        return room;
+    }
+
+    public void setRoom(Rooms room) {
+        this.room = room;
+    }
 
     public int getGuestId() {
         return guestId;

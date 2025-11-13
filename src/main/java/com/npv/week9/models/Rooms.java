@@ -8,6 +8,7 @@ public class Rooms {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int roomId;
+    
 
     private float roomSize;
     private int noOfBeds;
